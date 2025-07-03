@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Davi Leonardo | Designer Gráfico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Montserrat', sans-serif; background: #f2f2f2; color: #222; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 2rem; background: #000; color: #fff; }
+    header h1 { font-size: 1.5rem; }
+    nav a { color: #fff; margin-left: 1.5rem; text-decoration: none; font-weight: 300; }
+    nav a:hover { color: #ffea00; }
+
+    .hero { display: flex; align-items: center; justify-content: center; flex-direction: column; padding: 5rem 2rem; background: #111; color: #fff; text-align: center; }
+    .hero h2 { font-size: 2rem; }
+    .hero p { font-size: 1.1rem; margin: 1rem 0; }
+    .btn-yellow { background: #ffea00; color: #000; padding: 0.8rem 1.5rem; font-weight: bold; border: none; cursor: pointer; text-transform: uppercase; }
+
+    .about, .portfolio, .contact { padding: 4rem 2rem; max-width: 1000px; margin: auto; }
+    .about h3, .portfolio h3, .contact h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+    .about p { font-size: 1rem; line-height: 1.6; }
+    .about-img { width: 200px; border-radius: 10px; margin-bottom: 1rem; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 2rem; }
+    .grid img { width: 100%; border-radius: 8px; object-fit: cover; }
+
+    footer { text-align: center; padding: 2rem; background: #000; color: #fff; margin-top: 3rem; }
+    .contact-info p { margin: 0.5rem 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Davi Leonardo</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">Sobre</a>
+      <a href="#portfolio">Trabalhos</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Meu nome é Davi</h2>
+    <p>Sou Designer Gráfico especializado em posts para redes sociais.</p>
+    <button class="btn-yellow">Ver Portfólio</button>
+  </section>
+
+  <section class="about" id="about">
+    <h3>Sobre Mim</h3>
+  
+    <p>Sou designer gráfico com 1 ano de experiência, criando posts diversos sobre vários temas para redes sociais. Trabalho com Photoshop e Illustrator para desenvolver conteúdos visualmente atraentes e estratégicos. Estou sempre focado em entregar resultados criativos e funcionais.</p>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <h3>Meus Trabalhos</h3>
+    <div class="grid">
+      <img src="https://i.imgur.com/lqrSDYG.png" alt="Post 1">
+      <img src="https://i.imgur.com/XzaCQMu.png" alt="Post 2">
+      <img src="https://i.imgur.com/9tOH7da.png" alt="Post 3">
+      <img src="https://i.imgur.com/3ovYy0z.png" alt="Post 4">
+      <img src="https://i.imgur.com/Db8BaaM.png" alt="Post 5">
+      <img src="https://i.imgur.com/7UhLsmS.png" alt="Post 7">
+      <img src="https://i.imgur.com/CPhRrr4.png" alt="Post 9">
+      <img src="https://i.imgur.com/8yH3ijp.png" alt="Post 10">
+      <img src="https://i.imgur.com/3W4Vw7p.png" alt="Post 11">
+      <img src="https://i.imgur.com/MSo5hqy.png" alt="Post 13">
+      <img src="https://i.imgur.com/HS5vsUq.png" alt="Post 16">
+      <img src="https://i.imgur.com/iv1xCU4.png" alt="Post 17">
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h3>Contato</h3>
+    <div class="contact-info">
+      <p>Instagram: <a href="https://instagram.com/davi_leonard" target="_blank">@davi_leonard</a></p>
+      <p>WhatsApp: <a href="https://wa.me/5588981555672" target="_blank">(88) 98155-5672</a></p>
+      <p>Email: <a href="mailto:davileo17@gmail.com">davileo17@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Davi Leonardo – Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
