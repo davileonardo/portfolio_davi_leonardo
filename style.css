@@ -35,3 +35,41 @@
 .carrossel-imagens img:hover {
   transform: scale(1.03);
 }
+/* --- Estilo do carrossel --- */
+.carrossel {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.carrossel-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.carrossel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carrossel-imagens {
+  display: flex;
+  gap: 20px;
+}
+
+.carrossel-imagens img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.carrossel-imagens img:hover {
+  transform: scale(1.03);
+}
