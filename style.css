@@ -34,3 +34,41 @@
 .carrossel img:hover {
   transform: scale(1.05);
 }
+.carrosseis {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.carrosseis h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.carrossel-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carrossel-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.carrossel {
+  display: inline-flex;
+  gap: 16px;
+}
+
+.carrossel img {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.carrossel img:hover {
+  transform: scale(1.05);
+}
