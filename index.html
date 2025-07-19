@@ -35,30 +35,7 @@
   </style>
 </head>
 
-<script>
-  let slideIndex = 0;
-  const slides = document.querySelectorAll(".carrossel-slide .slide");
 
-  function mostrarSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.remove("active");
-      if (i === index) slide.classList.add("active");
-    });
-  }
-
-  function mudarSlide(direcao) {
-    slideIndex = (slideIndex + direcao + slides.length) % slides.length;
-    mostrarSlide(slideIndex);
-  }
-
-  // Slide automático a cada 5 segundos
-  setInterval(() => {
-    mudarSlide(1);
-  }, 5000);
-
-  // Inicializar
-  mostrarSlide(slideIndex);
-</script>
 <body>
   <header>
     <h1>Davi Leonardo</h1>
@@ -150,5 +127,32 @@
   <footer>
     <p>&copy; 2025 Davi Leonardo – Todos os direitos reservados.</p>
   </footer>
+
+
+
+  <script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".carrossel-slide .slide");
+
+  function mostrarSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      if (i === index) slide.classList.add("active");
+    });
+  }
+
+  function mudarSlide(direcao) {
+    slideIndex = (slideIndex + direcao + slides.length) % slides.length;
+    mostrarSlide(slideIndex);
+  }
+
+  // Slide automático a cada 5 segundos
+  setInterval(() => {
+    mudarSlide(1);
+  }, 5000);
+
+  // Inicializar
+  mostrarSlide(slideIndex);
+</script>
 </body>
 </html>
