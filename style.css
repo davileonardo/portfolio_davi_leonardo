@@ -1,0 +1,36 @@
+#carrosseis {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+#carrosseis h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.carrossel-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carrossel-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.carrossel img {
+  width: 250px;
+  height: auto;
+  margin-right: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.carrossel img:hover {
+  transform: scale(1.05);
+}
