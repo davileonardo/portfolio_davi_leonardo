@@ -73,3 +73,54 @@
 .carrossel-imagens img:hover {
   transform: scale(1.03);
 }
+.carrossel-slide {
+  position: relative;
+  max-width: 600px;
+  margin: 60px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carrossel-slide .slide {
+  display: none;
+}
+
+.carrossel-slide .slide.active {
+  display: block;
+  animation: fade 0.7s ease-in-out;
+}
+
+.carrossel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.carrossel-slide .prev,
+.carrossel-slide .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.carrossel-slide .prev {
+  left: 10px;
+}
+
+.carrossel-slide .next {
+  right: 10px;
+}
+
+@keyframes fade {
+  from {opacity: 0.5;}
+  to {opacity: 1;}
+}
