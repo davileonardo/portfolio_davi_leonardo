@@ -179,3 +179,35 @@ footer {
   object-fit: cover;
   border-radius: 10px;
 }
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.galeria img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
