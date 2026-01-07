@@ -1,5 +1,5 @@
 const galeria = document.getElementById("galeria");
-const totalImagens = 34; // coloque aqui a quantidade total de imagens que tem na pasta
+const totalImagens = 24; // coloque aqui a quantidade total de imagens que tem na pasta
 
 for (let i = 1; i <= totalImagens; i++) {
   const img = document.createElement("img");
