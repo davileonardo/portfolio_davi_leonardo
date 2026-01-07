@@ -211,3 +211,38 @@ h1 {
 .galeria img:hover {
   transform: scale(1.05);
 }
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* efeito hover na galeria */
+.galeria img {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.03);
+}
